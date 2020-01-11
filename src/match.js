@@ -26,8 +26,7 @@ module.exports = function match(text, query) {
       })
       .reduce(function(result, word) {
         var wordLen = word.length;
-        var prefix = wordCharacterRegex.test(word[0]) ? '\\b' : '';
-        var regex = new RegExp(prefix + escapeRegexCharacters(word), 'i');
+        var regex = new RegExp(escapeRegexCharacters(word), 'i');
         var index = text.search(regex);
 
         if (index > -1) {
