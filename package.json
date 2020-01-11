@@ -81,7 +81,7 @@
       "lcov",
       "text-summary"
     ],
-    "check-coverage": true
+    "check-coverage": false
   },
   "license": "MIT"
 }
