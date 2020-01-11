@@ -20,7 +20,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "my-forked-plugin": ""https://github.com/hotopiano/autosuggest-highlight.git",
+    "my-forked-plugin": "https://github.com/hotopiano/autosuggest-highlight.git",
     "diacritic": "0.0.2"
   },
   "devDependencies": {
