@@ -3,9 +3,6 @@ var removeDiacritics = require('diacritic').clean;
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions#Using_special_characters
 var specialCharsRegex = /[.*+?^${}()|[\]\\]/g;
 
-// http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.2.6
-var wordCharacterRegex = /[a-z0-9_]/i;
-
 var whitespacesRegex = /\s+/;
 
 function escapeRegexCharacters(str) {
