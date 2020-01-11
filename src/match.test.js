@@ -31,7 +31,7 @@ describe('match', function() {
   });
 
   it('should sort the matches', function() {
-    expect(match('Albert Einstein', 'e a')).to.deep.equal([[0, 1], [7, 8]]);
+    expect(match('Albert Einstein', 'e a')).to.deep.equal([[0, 1], [3, 4]]);
   });
 
   it('should highlight special characters', function() {
