@@ -30,6 +30,10 @@ describe('match', function() {
     expect(match('Déjà vu', 'déjà')).to.deep.equal([[0, 4]]);
   });
 
+  it('should sort the matches', function() {
+    expect(match('Albert Einstein', 'e a')).to.deep.equal([[0, 1], [7, 8]]);
+  });
+
   it('should highlight special characters', function() {
     expect(
       match(
