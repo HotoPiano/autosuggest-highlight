@@ -37,7 +37,7 @@ It returns an array of pairs. Every pair `[a, b]` means that `text.slice(a, b)` 
 
 #### Examples
 
-We match only at the beginning of a word:
+We not only match at the beginning of a word:
 
 ```js
 var match = require('autosuggest-highlight/match');
