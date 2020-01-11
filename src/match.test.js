@@ -6,8 +6,8 @@ describe('match', function() {
     expect(match('some text', 'te')).to.deep.equal([[5, 7]]);
   });
 
-  it('should not highlight at the middle of a word', function() {
-    expect(match('some text', 'e')).to.deep.equal([]);
+  it('should highlight at the middle of a word', function() {
+    expect(match('some text', 'e')).to.deep.equal([3, 1]);
   });
 
   it('should highlight only the first match by default', function() {
@@ -28,10 +28,6 @@ describe('match', function() {
 
   it('should highlight diacritics', function() {
     expect(match('Déjà vu', 'déjà')).to.deep.equal([[0, 4]]);
-  });
-
-  it('should sort the matches', function() {
-    expect(match('Albert Einstein', 'e a')).to.deep.equal([[0, 1], [7, 8]]);
   });
 
   it('should highlight special characters', function() {
