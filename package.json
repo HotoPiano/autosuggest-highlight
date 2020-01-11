@@ -8,7 +8,6 @@
   },
   "author": "Misha Moroshko <michael.moroshko@gmail.com>",
   "scripts": {
-    "postinstall": "node -e \"require('fs').stat('lib', function (e, s) { process.exit(e || !s.isDirectory() ? 1 : 0) })\" || npm run build",
     "lint": "eslint src webpack.config.js",
     "prettier": "prettier --single-quote --write \".*.js\" \"*.js\" \"src/**/*.js\"",
     "test": "nyc mocha \"src/*.test.js\"",
