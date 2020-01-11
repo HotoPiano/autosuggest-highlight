@@ -7,7 +7,7 @@ describe('match', function() {
   });
 
   it('should highlight at the middle of a word', function() {
-    expect(match('some text', 'e')).to.deep.equal([3, 4]);
+    expect(match('some text', 'e')).to.deep.equal([[3, 4]]);
   });
 
   it('should highlight only the first match by default', function() {
